@@ -1,0 +1,103 @@
+@media screen and (max-width:768px) {
+/* override ant design */
+  .trigger {
+    visibility: hidden;
+  }
+  .ant-layout, #app {
+    height: auto;
+  }
+}
+@media screen and (min-width:768px) {
+  .ant-layout, #app {
+    min-height: 900px;
+  }
+  html, body {
+    height: auto;
+  }
+}
+/* override ant design */
+.ant-dropdown-content {
+  min-width: 100px;
+  margin-top:7px;
+}
+.ant-layout-sider-collapsed .ant-menu-item .anticon {
+  font-size: 17px;
+  margin-left:15px;
+  transition:1s;
+}
+.ant-menu-item {
+  white-space:normal;
+}
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.trigger:hover {
+  color: #1890ff;
+}
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 16px;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+#myChart {
+  max-height: 100px important;
+}
+.text-center {
+  text-align: center;
+}
+/* search bar */
+.quick-search {
+  line-height: 2.5em;
+}
+.quick-search button {
+  background-color: #091b57;
+}
+/* fonts */
+.fs-2hx {
+  font-size: 2.5rem !important;
+}
+.fw-bolder {
+  font-weight: 600 !important;
+}
+.text-gray-400 {
+  color: #B5B5C3 !important;
+}
+.fs-4 {
+  font-size: 1.25rem !important;
+}
+.me-1 {
+  margin-right: 0.25rem !important;
+}
+.text-center {
+  text-align: center;
+}
+/* Form */
+.btn-site {
+  background-color:#091b57;
+  color:#ffffff;
+}
+.jqstooltip {
+  height: auto !important;
+  width:auto !important;
+}
+.ant-picker {
+  width:100%;
+}
+
+/* datatables */
+.dataTables_wrapper .dataTables_filter input {
+  margin-left:18px;
+}
+.table-striped .odd > td {
+background-color: #edf4ff;
+}
+.line-chart {
+  height: auto;
+}

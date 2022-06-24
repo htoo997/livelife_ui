@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view> </router-view>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import BaseDesign from './views/BaseDesign.vue';
+import { defineComponent, ref } from 'vue';
+// import BreadCrumb from './../components/BreadCrumb.vue';
 
-export default {
-  name: 'App',
+export default defineComponent({
   components: {
-    HelloWorld
+    // BaseDesign,
+    // BreadCrumb,
+  },
+  data() {
+    return {
+       routes : this.$router.options.routes,
+    }
+  },
+  setup() {
+    return {
+      selectedKeys: ref(['1']),
+      collapsed: ref(false),
+      
+    };
   }
-}
-</script>
+});
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+</script>
